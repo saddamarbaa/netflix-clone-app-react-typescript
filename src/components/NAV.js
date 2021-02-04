@@ -7,10 +7,11 @@ import profile from "../images/profile__logo.png";
 
 const NAV = () => {
   return (
-    <div className="nav">
-      <img src={logo} alt="logo" />
-      <img src={profile} alt="profile" />
-      <h1>this is the Nav</h1>
+    <div className="nav nav__black">
+      <div className="nav__contents">
+        <img className="nav__logo" src={logo} alt="logo" />
+        <img className="nav__profile" src={profile} alt="profile" />
+      </div>
     </div>
   );
 };
