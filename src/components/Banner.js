@@ -39,7 +39,16 @@ const Banner = () => {
     fetchMoviesData();
   }, []);
 
+  // bannerTitle = movie?.title || movie?.name || movie?.original_name
+  // optional if the movie doesn't have title use it name as title
+  // and if its doesnt have name also then use it original_name as title
+
+  const bannerTitle = movie?.title || movie?.name || movie?.original_name;
+  const bannerDescription = movie.overview;
+
   // console.log(movie);
+  // console.log("the banner title is :", bannerTitle);
+  // console.log("the banner description is :", bannerDescription);
 
   /**
    * function to truncate(cut) the string if the length of given string bigger    than  given number(n)
@@ -69,23 +78,13 @@ const Banner = () => {
       }}
     >
       <div className="banner__contents">
-        <h1 className="banner__title">Move Name</h1>
+        <h1 className="banner__title">{bannerTitle}</h1>
         <div className="banner__buttons">
           <button className="banner__button">Play</button>
           <button className="banner__button">My List</button>
         </div>
         <h1 className="banner__description">
-          {truncate(
-            `this is thefade effect in the bottom of the bannerfade effect in the
-          bottom of the bannerfade effect in the bottom of the bannerfade effect
-          in the bottom of the bannerfade effect in the bottom of the bannerfade
-          effect in the bottom of the bannerfade effect in the bottom of the
-          bannerfade effect in the bottom of the bannerfade effect in the bottom
-          of the bannerfade effect in the bottom of the bannerfade effect in the
-          bottom of the bannerfade effect in the bottom of the banner banner
-          description`,
-            100
-          )}
+          {truncate(bannerDescription, 100)}
         </h1>
       </div>
 
