@@ -3,7 +3,7 @@ import "./NAV.css";
 import logo from "../images/logo.png";
 import profile from "../images/profile__logo.png";
 
-// App NavBa component
+// NavBar component
 
 const NAV = () => {
   // blow  for hide and show functionality
