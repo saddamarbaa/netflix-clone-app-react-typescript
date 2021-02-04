@@ -4,6 +4,23 @@ import "./Banner.css";
 // Banner component
 
 const Banner = () => {
+  /**
+   * function to truncate(cut) the string if the length of given string bigger    than  given number(n)
+   *  @param {string}  given string
+   *  @param {n}  given number
+			* 
+		   if (string.length > n) {
+      return string.substr(0, n - 1) + `....`;
+    } else {
+      return string;
+    }
+   *
+   */
+
+  const truncate = (string, n) => {
+    return string?.length > n ? string.substr(0, n - 1) + " ...." : string;
+  };
+
   return (
     <header
       className="banner"
@@ -19,7 +36,19 @@ const Banner = () => {
           <button className="banner__button">Play</button>
           <button className="banner__button">My List</button>
         </div>
-        <h1 className="banner__description">this is the banner description</h1>
+        <h1 className="banner__description">
+          {truncate(
+            `this is thefade effect in the bottom of the bannerfade effect in the
+          bottom of the bannerfade effect in the bottom of the bannerfade effect
+          in the bottom of the bannerfade effect in the bottom of the bannerfade
+          effect in the bottom of the bannerfade effect in the bottom of the
+          bannerfade effect in the bottom of the bannerfade effect in the bottom
+          of the bannerfade effect in the bottom of the bannerfade effect in the
+          bottom of the bannerfade effect in the bottom of the banner banner
+          description`,
+            100
+          )}
+        </h1>
       </div>
 
       {/* this for fade effect in the bottom of the banner */}

@@ -47,7 +47,7 @@
   transition: all 0.2s;
 }
 
-/* fade effect in the bottom of the banner  */
+/* fade effect in the bottom of the banner */
 .banner--fadeBottom {
   height: 7.4rem;
   background-image: linear-gradient(
