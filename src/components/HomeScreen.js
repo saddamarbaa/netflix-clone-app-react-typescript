@@ -18,11 +18,11 @@ const HomeScreen = () => {
         isLageRow
       />
       <Row title="Top Rated" fetchUrl={request.fetchTopRated} />
+      <Row title="Romance Movies" fetchUrl={request.fetchRomanceMovies} />
       <Row title="Action Movies" fetchUrl={request.fetchActionMovies} />
-
+      <Row title="War Movies" fetchUrl={request.fetchWarMovies} />
       <Row title="Comedy Movies" fetchUrl={request.fetchNetflixOriginals} />
       <Row title="Horror Movies" fetchUrl={request.fetchHorrorMovies} />
-      <Row title="Romance Movies" fetchUrl={request.fetchRomanceMovies} />
       <Row title="Crime Movies" fetchUrl={request.fetchCrimeMovies} />
 
       <Row
@@ -33,8 +33,9 @@ const HomeScreen = () => {
       <Row title="Drama Movies" fetchUrl={request.fetchDramaMovies} />
 
       <Row title="Animation Movies" fetchUrl={request.fetchAnimationMovies} />
-      <Row title="War Movies" fetchUrl={request.fetchWarMovies} />
       <Row title="Family Movies" fetchUrl={request.fetchFamilyMovies} />
+      <Row title="Music Movies" fetchUrl={request.fetchMusicMovies} />
+      <Row title="Fantasy Movies" fetchUrl={request.fetchFantasyMovies} />
     </div>
   );
 };
