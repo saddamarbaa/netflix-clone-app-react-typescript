@@ -19,13 +19,16 @@ const HomeScreen = () => {
       />
       <Row title="Top Rated" fetchUrl={request.fetchTopRated} />
       <Row title="Action Movies" fetchUrl={request.fetchActionMovies} />
+
       <Row title="Comedy Movies" fetchUrl={request.fetchNetflixOriginals} />
       <Row title="Horror Movies" fetchUrl={request.fetchHorrorMovies} />
       <Row title="Romance Movies" fetchUrl={request.fetchRomanceMovies} />
+
       <Row
         title="Documentaries Movies"
         fetchUrl={request.fetchDocumentariesMovies}
       />
+      <Row title="Adventure Movies" fetchUrl={request.fetchAdventureMovies} />
     </div>
   );
 };
