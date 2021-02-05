@@ -36,6 +36,10 @@ const HomeScreen = () => {
       <Row title="Family Movies" fetchUrl={request.fetchFamilyMovies} />
       <Row title="Music Movies" fetchUrl={request.fetchMusicMovies} />
       <Row title="Fantasy Movies" fetchUrl={request.fetchFantasyMovies} />
+      <Row
+        title="Science Fiction Movies"
+        fetchUrl={request.fetchScienceFictionMovies}
+      />
     </div>
   );
 };
