@@ -45,16 +45,18 @@ const Row = ({ title, fetchUrl, isLageRow = false }) => {
 
       {/* {iterate over the movie object and return row of image} */}
 
-      {movies.map((movie) => (
-        <img
-          className={`row__poster ${isLageRow && "row__posterLarge"}`}
-          key={movie.id}
-          src={`${base_url}${
-            isLageRow ? movie.poster_path : movie.backdrop_path
-          }`}
-          alt={movie.name}
-        />
-      ))}
+      <div className="row__posters">
+        {movies.map((movie) => (
+          <img
+            className={`row__poster ${isLageRow && "row__posterLarge"}`}
+            key={movie.id}
+            src={`${base_url}${
+              isLageRow ? movie.poster_path : movie.backdrop_path
+            }`}
+            alt={movie.name}
+          />
+        ))}
+      </div>
     </div>
   );
 };
