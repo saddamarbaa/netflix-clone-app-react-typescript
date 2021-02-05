@@ -20,6 +20,7 @@ const request = {
 
   fetchAnimationMovies: `/discover/movie?api_key=${API_KEY}&with_genres=16`,
   fetchWarMovies: `/discover/movie?api_key=${API_KEY}&with_genres=10752`,
+  fetchFamilyMovies: `/discover/movie?api_key=${API_KEY}&with_genres=10751`,
 };
 
 // this is what is happening for each request
