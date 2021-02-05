@@ -29,6 +29,7 @@ const HomeScreen = () => {
         fetchUrl={request.fetchDocumentariesMovies}
       />
       <Row title="Adventure Movies" fetchUrl={request.fetchAdventureMovies} />
+      <Row title="Animation Movies" fetchUrl={request.fetchAnimationMovies} />
     </div>
   );
 };
