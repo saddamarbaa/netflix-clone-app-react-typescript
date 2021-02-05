@@ -30,7 +30,10 @@ const HomeScreen = () => {
         fetchUrl={request.fetchDocumentariesMovies}
       />
       <Row title="Adventure Movies" fetchUrl={request.fetchAdventureMovies} />
+      <Row title="Drama Movies" fetchUrl={request.fetchDramaMovies} />
+
       <Row title="Animation Movies" fetchUrl={request.fetchAnimationMovies} />
+      <Row title="War Movies" fetchUrl={request.fetchWarMovies} />
     </div>
   );
 };

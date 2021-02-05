@@ -16,7 +16,10 @@ const request = {
   fetchCrimeMovies: `/discover/movie?api_key=${API_KEY}&with_genres=80`,
   fetchDocumentariesMovies: `/discover/movie?api_key=${API_KEY}&with_genres=99`,
   fetchAdventureMovies: `/discover/movie?api_key=${API_KEY}&with_genres=12`,
+  fetchDramaMovies: `/discover/movie?api_key=${API_KEY}&with_genres=18`,
+
   fetchAnimationMovies: `/discover/movie?api_key=${API_KEY}&with_genres=16`,
+  fetchWarMovies: `/discover/movie?api_key=${API_KEY}&with_genres=10752`,
 };
 
 // this is what is happening for each request
