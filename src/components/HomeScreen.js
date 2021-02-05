@@ -34,6 +34,7 @@ const HomeScreen = () => {
       <Row title="Mystery Movies" fetchUrl={request.fetchMysteryMovies} />
       <Row title="Animation Movies" fetchUrl={request.fetchAnimationMovies} />
       <Row title="Family Movies" fetchUrl={request.fetchFamilyMovies} />
+      <Row title="History Movies" fetchUrl={request.fetchHistoryMovies} />
       <Row title="Music Movies" fetchUrl={request.fetchMusicMovies} />
       <Row title="Fantasy Movies" fetchUrl={request.fetchFantasyMovies} />
       <Row
