@@ -35,7 +35,7 @@ const Banner = () => {
       return request;
     }
 
-    // fetchMoviesData()
+    // function call fetchMoviesData()
     fetchMoviesData();
   }, []);
 
@@ -51,7 +51,7 @@ const Banner = () => {
   // console.log("the banner description is :", bannerDescription);
 
   /**
-   * function to truncate(cut) the string if the length of given string bigger    than  given number(n)
+   * function to truncate(cut) the string if the length of given string bigger than  given number(n)
    *  @param {string}  given string
    *  @param {n}  given number
 			* 
