@@ -4,8 +4,6 @@ Netflix Clone built with React Js, Firebase Authentication in this project I con
 ### <a href="https://netflix-clone-80070.web.app">LIVE DEMO</a>
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
-
-### <a href="https://netflix-clone-80070.web.app">LIVE DEMO</a>
 ## Available Scripts
 
 In the project directory, you can run:
