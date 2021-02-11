@@ -1,4 +1,5 @@
-## ==> Netflix Clone built with React Js, Firebase Authentication in this project I converted my previous javascript project to ReactJs and learned reacts basis, NPM, Component, Props, JSX, Virtual DOM, Styling in ReactJS, Deploy Project, Hooks, and more
+## ==> Netflix Clone React Js
+Netflix Clone built with React Js, Firebase Authentication in this project I converted my previous javascript project to ReactJs and learned reacts basis, NPM, Component, Props, JSX, Virtual DOM, Styling in ReactJS, Deploy Project, Hooks, and more
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
