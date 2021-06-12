@@ -4,7 +4,7 @@ import React from "react";
 import "./HomeScreen.css";
 import Banner from "./Banner";
 import NAV from "./NAV";
-import request from "./Requests";
+import request from "../api/requests";
 import Row from "./Row";
 
 const HomeScreen = () => {

@@ -2,7 +2,9 @@
 
 import React, { useState, useEffect } from "react";
 import "./Row.css";
-import axios from "./axios";
+import axios from "../api/axios";
+
+
 
 const Row = ({ title, fetchUrl, isLargeRow = false }) => {
 	// let create peace of state to keep trake of the movies
