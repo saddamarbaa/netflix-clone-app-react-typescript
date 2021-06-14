@@ -3,8 +3,8 @@
 import React, { useState, useEffect } from "react";
 import "./Row.css";
 import axios from "../api/axios";
-
-
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 const Row = ({ title, fetchUrl, isLargeRow = false }) => {
 	// let create peace of state to keep trake of the movies
@@ -40,7 +40,9 @@ const Row = ({ title, fetchUrl, isLargeRow = false }) => {
 					(movie) =>
 						((isLargeRow && movie.poster_path) ||
 							(!isLargeRow && movie.backdrop_path)) && (
-							<img
+							<LazyLoadImage
+								effect='blur'
+								placeholderSrc='https://image.tmdb.org/t/p/original/4EYPN5mVIhKLfxGruy7Dy41dTVn.jpg'
 								className={`row__poster ${
 									isLargeRow && "row__posterLarge"
 								}`}

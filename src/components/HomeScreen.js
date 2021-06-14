@@ -1,16 +1,19 @@
 /** @format */
 
-import React from "react";
+import React, { Suspense } from "react";
 import "./HomeScreen.css";
 import Banner from "./Banner";
-import NAV from "./NAV";
+// import NAV from "./NAV";
 import request from "../api/requests";
 import Row from "./Row";
+const NAV = React.lazy(() => import("./NAV"));
 
 const HomeScreen = () => {
 	return (
 		<div className='homeScreen'>
-			<NAV />
+			<Suspense fallback={<div>Loading...</div>}>
+				<NAV />
+			</Suspense>
 			<Banner />
 			<Row
 				title='NETFILX ORIGINALS'
