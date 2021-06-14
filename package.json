@@ -8,11 +8,13 @@
 		"@testing-library/react": "^9.5.0",
 		"@testing-library/user-event": "^7.2.1",
 		"axios": "^0.21.1",
+		"movie-trailer": "^2.1.0",
 		"react": "^17.0.1",
 		"react-dom": "^17.0.1",
 		"react-lazy-load-image-component": "^1.5.1",
 		"react-redux": "^7.2.2",
-		"react-scripts": "4.0.2"
+		"react-scripts": "4.0.2",
+		"react-youtube": "^7.13.1"
 	},
 	"scripts": {
 		"start": "react-scripts start",
