@@ -6,6 +6,7 @@
 # Table of contents
 * [Author](#Author)
 * [Demo](#Demo)
+* [Related Projects](#Related_Projects)
 * [Technologies](#Technologies)
 * [Optimizations](#Optimizations)
 * [Contributing](#Contributing)
@@ -18,14 +19,12 @@
 * [Run Locally](#Run_Locally)
 * [Environment Variables](#Environment)
 * [Deployment](#Deployment)
-* [Related Projects](#Related_Projects)
 
 
  
 # Author
 
-### <a href="(https://github.com/saddamarbaa">@Saddam Arbaa</a>
-
+### <a href="https://github.com/saddamarbaa">@Saddam Arbaa</a>
 
 
 # Technologies
@@ -47,13 +46,13 @@
 
 # Demo
 
-### <a href="https://netflix-clone-80070.web.app">LIVE DEMO</a>
+## <a href="https://netflix-clone-80070.web.app">LIVE DEMO</a>
 <!-- ###  <a href="https://www.loom.com/share/545edc779b964d2095f9dd5a5d22a0b4"> Live Video Demo </a> -->
 
 
 #  Related_Projects
 
-** Netflix Clone built with Vanilla JavaScript and Node Js:** 
+-  Netflix Clone built with Vanilla JavaScript and Node Js:
 
 * <a href="https://github.com/saddamarbaa/netflix-clone-vanillaJS"> Front-End Repo </a>
 * <a href="https://github.com/saddamarbaa/netflix-clone-api"> Back-end Repo (Netflix Clone API)</a>
@@ -69,7 +68,7 @@
 -  Stripe Checkout/Payments (TODO)
 
 
-## Optimizations
+# Optimizations
 -  react-lazy-load-image-component
 -  Code-Splitting – React
 -  Function components
@@ -107,7 +106,6 @@ Facebook
 https://www.facebook.com/saddam.arbaa
 
 
-  
 # Run_Locally
 
 Clone the project
