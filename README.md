@@ -1,7 +1,190 @@
-## ==> Netflix Clone React Js
-Netflix Clone built with React Js, Firebase Authentication in this project I converted my previous javascript project to ReactJs and learned reacts basis, NPM, Component, Props, JSX, Virtual DOM, Styling in ReactJS, Deploy Project, Hooks, and more
+# Netflix Clone
+
+ Building Netflix Clone App with React Js, Redux, Firestore, Firebase Hosting, with complete user authentication (a mobile-friendly) 
+
+
+# Table of contents
+* [Author](#Author)
+* [Demo](#Demo)
+* [Technologies](#Technologies)
+* [Optimizations](#Optimizations)
+* [Contributing](#Contributing)
+* [Features](#Features)
+* [Status](#status)
+* [Inspiration](#inspiration)
+* [Support](#Support)
+* [Feedback](#Feedback)
+* [Screenshots](#Screenshots)
+* [Run Locally](#Run_Locally)
+* [Environment Variables](#Environment)
+* [Deployment](#Deployment)
+* [Related Projects](#Related_Projects)
+
+
+ 
+# Author
+
+### <a href="(https://github.com/saddamarbaa">@Saddam Arbaa</a>
+
+
+
+# Technologies
+
+**Client:**  
+
+* React Js 
+* Redux 
+
+
+**Server:** 
+
+* Firebase Realtime Database
+* Firebase Hosting
+* Firebase Google Authentication
+* Firebase Email and password Authentication
+
+
+
+# Demo
 
 ### <a href="https://netflix-clone-80070.web.app">LIVE DEMO</a>
+<!-- ###  <a href="https://www.loom.com/share/545edc779b964d2095f9dd5a5d22a0b4"> Live Video Demo </a> -->
+
+
+#  Related_Projects
+
+** Netflix Clone built with Vanilla JavaScript and Node Js:** 
+
+* <a href="https://github.com/saddamarbaa/netflix-clone-vanillaJS"> Front-End Repo </a>
+* <a href="https://github.com/saddamarbaa/netflix-clone-api"> Back-end Repo (Netflix Clone API)</a>
+* <a href="https://netflix-saddam.netlify.app">LIVE DEMO</a>
+
+
+# Features
+-  Complete user authentication users can sign in, sign out
+-  View top-rated
+-  View all netflix main genres
+-  View youtube thriller
+-  Used TMDb API 
+-  Stripe Checkout/Payments (TODO)
+
+
+## Optimizations
+-  react-lazy-load-image-component
+-  Code-Splitting – React
+-  Function components
+-  React hooks
+-  React useEffect cleanup
+
+
+ # Contributing
+
+Contributions are always welcome!
+
+# Support
+
+For support, email saddamarbaas@gmail.com.
+
+
+# Feedback
+
+If you have any feedback, please reach out to me at saddamarbaas@gmail.com
+
+  
+Twitter
+https://twitter.com/ArbaaSaddam/
+
+Linkedin.
+https://www.linkedin.com/in/saddamarbaa/
+
+Github
+https://github.com/saddamarbaa
+
+Instagram
+https://www.instagram.com/saddam.dev/
+
+Facebook
+https://www.facebook.com/saddam.arbaa
+
+
+  
+# Run_Locally
+
+Clone the project
+
+```bash
+  https://github.com/saddamarbaa/netflix-clone-react
+```
+
+Go to the project directory
+
+```bash
+  cd netflix-clone-react
+```
+
+Install dependencies
+
+```bash
+  npm install
+```
+
+Start the server
+
+```bash
+  npm start
+
+
+```
+
+
+# Environment
+
+- To run this project, you will need to add the following environment variables to your .env file
+
+- REACT_APP_TMDB_API_KEY
+- REACT_APP_FIREBASE_API_KEY
+- REACT_APP_AUTH_DOMAIN 
+- REACT_APP_STORAGE_BUCKET
+- REACT_APP_PROJECT_ID
+- REACT_APP_MESSAIN_SENDER_ID
+- REACT_APP_APPID
+
+
+
+# Status
+
+Project is now complete in React Js next step I would love to convert to React + TypeScript + Next.js
+
+
+# Inspiration
+Build By Saddam Arbaa Project inspired by [Netflix] https://www.netflix.com
+
+
+# Deployment
+To deploy this project on firebase Flow the firebase documentation <a href="https://firebase.google.com/docs">Firebase Documentation</a>
+
+
+# Screenshots
+
+## Home Page 
+![image](https://user-images.githubusercontent.com/51326421/122394282-ff9a8b00-cf9f-11eb-8ed5-1d10afa3be27.png)
+
+##  Welcoming Page 
+![image](https://user-images.githubusercontent.com/51326421/122414571-712f0500-cfb1-11eb-93dc-3778fcb49aad.png)
+
+
+
+##  Sign in page 
+![image](https://user-images.githubusercontent.com/51326421/122414725-8e63d380-cfb1-11eb-84f7-f9e3a26b88e1.png)
+
+
+
+
+## Edit Profile Page
+![image](https://user-images.githubusercontent.com/51326421/122415024-c1a66280-cfb1-11eb-95f1-259bc66f4b03.png)
+
+
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
 ## Available Scripts
