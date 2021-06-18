@@ -52,16 +52,15 @@
 
 #  Related_Projects
 
--  Netflix Clone built with Vanilla JavaScript and Node Js:
-
-* <a href="https://github.com/saddamarbaa/netflix-clone-vanillaJS"> Front-End Repo </a>
-* <a href="https://github.com/saddamarbaa/netflix-clone-api"> Back-end Repo (Netflix Clone API)</a>
-* <a href="https://netflix-saddam.netlify.app">LIVE DEMO</a>
+###  Netflix Clone App buil with vanilla JavaScript, Node.js, Express, MongoDB
+###  <a href="https://github.com/saddamarbaa/netflix-clone-vanillaJS"> Front-End Repo </a>
+###  <a href="https://github.com/saddamarbaa/netflix-clone-api"> Back-end Repo (Netflix Clone API)</a>
+### <a href="https://netflix-saddam.netlify.app">LIVE DEMO</a>
 
 
 # Features
 -  Complete user authentication users can sign in, sign out
--  View top-rated
+-  View top rated movies
 -  View all netflix main genres
 -  View youtube thriller
 -  Used TMDb API 
@@ -69,8 +68,10 @@
 
 
 # Optimizations
+-  Memoization (useMemo, Memo)
 -  react-lazy-load-image-component
 -  Code-Splitting – React
+-  suspense component - React
 -  Function components
 -  React hooks
 -  React useEffect cleanup
@@ -151,7 +152,8 @@ Start the server
 
 # Status
 
-Project is now complete in React Js next step I would love to convert to React + TypeScript + Next.js
+ Project is now complete in React Js also in vanilla javaScript + Node.js + Express + MongoDB 
+ so my next step I would love to converted to React + TypeScript + Next.js
 
 
 # Inspiration
