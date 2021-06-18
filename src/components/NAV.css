@@ -1,40 +1,43 @@
+/** @format */
+
 .nav {
-  position: fixed;
-  top: 0;
-  padding: 20px;
-  width: 100%;
-  height: 30px;
-  z-index: 10;
-  /*Animation*/transition-timing-function: ease-in;
-  transition: all 0.5s;
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  -ms-transition: all 0.5s;
-  -o-transition: all 0.5s;
+	position: fixed;
+	top: 0;
+	padding: 20px;
+	width: 100%;
+	height: 30px;
+	z-index: 10;
+	/*Animation*/
+	transition-timing-function: ease-in;
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-o-transition: all 0.5s;
 }
 
 .nav__black {
-  background-color: #111;
+	background-color: #111;
 }
 
 .nav__contents {
-  display: flex;
-  justify-content: space-between;
+	display: flex;
+	justify-content: space-between;
 }
 
 .nav__logo {
-  position: fixed;
-  top: 13;
-  left: 0;
-  width: 80px;
-  cursor: pointer;
-  padding-left: 20px;
+	position: fixed;
+	top: 13;
+	left: 0;
+	width: 80px;
+	cursor: pointer;
+	padding-left: 20px;
 }
 
 .nav__profile {
-  position: fixed;
-  top: 13;
-  right: 20px;
-  width: 30px;
-  cursor: pointer;
+	position: fixed;
+	top: 13;
+	right: 20px;
+	width: 30px;
+	cursor: pointer;
 }

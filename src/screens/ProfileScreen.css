@@ -1,0 +1,168 @@
+/** @format */
+
+.profileScreen {
+	min-height: 100vh;
+	color: white;
+	width: 100%;
+}
+
+.profileScreen__body {
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+	margin-right: auto;
+	margin-left: auto;
+	padding-top: 70px;
+	max-width: 800px;
+}
+
+.profileScreen__info {
+	display: flex;
+}
+
+.profileScreen__body h1 {
+	font-size: 68px;
+	font-weight: 400px;
+	border-bottom: 1px solid #282c2d;
+	margin-bottom: 20px;
+}
+
+.profileScreen__info img {
+	height: 100px;
+}
+
+.profileScreen__details {
+	color: white;
+	margin-left: 25px;
+	flex: 1;
+}
+
+.profileScreen__details h2 input {
+	box-sizing: border-box;
+	width: 100%;
+	background-color: gray;
+	padding: 15px;
+	font-size: 15px;
+	padding-left: 20px;
+	border: none;
+	outline: none;
+	font-size: 18px;
+	cursor: pointer;
+	color: white !important;
+	transition: 0.4;
+	-webkit-transition: 0.4;
+	-moz-transition: 0.4;
+	-ms-transition: 0.4;
+	-o-transition: 0.4;
+}
+
+.profileScreen__details h2 input:focus {
+	border-bottom: 1px solid #e87c03;
+}
+
+.profileScreen__plans h3 {
+	border-bottom: 1px solid #282c2d;
+	padding-bottom: 10px;
+}
+
+.profileScreen__plans {
+	margin-top: 20px;
+	opacity: 0.8;
+}
+
+.profileScreen__plans:hover {
+	opacity: 1;
+}
+
+.profileScreen__plans--date {
+	margin-top: 20px;
+}
+
+.profileScreen__plans--plan {
+	display: flex;
+	justify-content: space-between;
+	margin: 20px;
+	margin-right: 0;
+	margin-bottom: 25px;
+}
+
+.profileScreen__plans--plan:hover {
+	opacity: 1;
+}
+
+.profileScreen__plans--plan span {
+	font-size: 14px;
+}
+
+.profileScreen__plans--plan button {
+	max-height: 37px;
+	min-height: 37px;
+	background-color: #e50914;
+	padding: 0 10px;
+	font-size: 1rem;
+	color: white;
+	border: none;
+	cursor: pointer;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+}
+
+.profileScreen__plans--plan button.profileScreen__plans--Premium {
+	background-color: gray;
+	color: white;
+	max-height: 43px;
+}
+
+.profileScreen__signOut {
+	background-color: #e50914;
+	padding: 16px 20px;
+	font-size: 1rem;
+	color: white;
+	margin-bottom: 28px;
+	margin-top: 20px;
+	font-weight: 600;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+	max-width: 100%;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+	.profileScreen__body {
+		width: 85%;
+		padding-top: 80px;
+		overflow: hidden;
+	}
+
+	.profileScreen__body h1 {
+		font-size: 32px;
+	}
+
+	.profileScreen__info img {
+		display: none;
+	}
+}
+
+.profileScreen ::placeholder {
+	/* Chrome, Firefox, Opera, Safari 10.1+ */
+	color: white;
+	opacity: 1; /* Firefox */
+}
+
+.profileScreen :-ms-input-placeholder {
+	/* Internet Explorer 10-11 */
+	color: white;
+}
+
+.profileScreen ::-ms-input-placeholder {
+	/* Microsoft Edge */
+	color: white;
+}

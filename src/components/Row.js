@@ -1,6 +1,6 @@
 /** @format */
 
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, memo } from "react";
 import "./Row.css";
 import axios from "../api/axios";
 import { LazyLoadImage } from "react-lazy-load-image-component";
@@ -11,6 +11,7 @@ import movieTrailer from "movie-trailer";
 const Row = ({ title, fetchUrl, isLargeRow = false }) => {
 	// let create peace of state to keep trake of the movies
 	// fetch movies from TMDB saved in movies variable and used for Rows(dynamic)
+
 	// Initialize movies variable with empty array
 	const [movies, setMovies] = useState([]);
 	const [trailerUrl, setTrailerUrl] = useState("");
@@ -32,7 +33,7 @@ const Row = ({ title, fetchUrl, isLargeRow = false }) => {
 		fetchMoviesData();
 	}, [fetchUrl]);
 
-	//This  From react-youtube documentation
+	//This From react-youtube documentation
 	const opts = {
 		height: "390",
 		width: "100%",
@@ -73,19 +74,25 @@ const Row = ({ title, fetchUrl, isLargeRow = false }) => {
 					(movie) =>
 						((isLargeRow && movie.poster_path) ||
 							(!isLargeRow && movie.backdrop_path)) && (
-							<LazyLoadImage
-								effect='blur'
-								placeholderSrc='https://image.tmdb.org/t/p/original/4EYPN5mVIhKLfxGruy7Dy41dTVn.jpg'
-								onClick={() => handleClick(movie)}
+							<div
 								className={`row__poster ${
 									isLargeRow && "row__posterLarge"
-								}`}
-								key={movie.id}
-								src={`${base_url}${
-									isLargeRow ? movie.poster_path : movie.backdrop_path
-								}`}
-								alt={movie.name}
-							/>
+								}`}>
+								<div className='row__posters--ImageContainer'>
+									<LazyLoadImage
+										effect='blur'
+										placeholderSrc='https://image.tmdb.org/t/p/original/4EYPN5mVIhKLfxGruy7Dy41dTVn.jpg'
+										onClick={() => handleClick(movie)}
+										key={movie.id}
+										src={`${base_url}${
+											isLargeRow
+												? movie.poster_path
+												: movie.backdrop_path
+										}`}
+										alt={movie.name}
+									/>
+								</div>
+							</div>
 						),
 				)}
 			</div>
@@ -95,4 +102,4 @@ const Row = ({ title, fetchUrl, isLargeRow = false }) => {
 	);
 };
 
-export default Row;
+export default memo(Row);

@@ -1,11 +1,15 @@
 /** @format */
 
-import React, { useEffect, useState } from "react";
+import React, {memo, useEffect, useState } from "react";
 import "./NAV.css";
 import logo from "../images/logo.png";
 import profile from "../images/profile__logo.png";
+import { useHistory } from "react-router";
+
 
 const NAV = () => {
+	const history = useHistory();
+
 	// blow  for hide and show functionality
 	const [show, handleShowNav] = useState(false);
 
@@ -31,11 +35,25 @@ const NAV = () => {
 		// (add or render nav__black to the website) only if the show variable is true
 		<div className={`nav ${show && "nav__black"}`}>
 			<div className='nav__contents'>
-				<img className='nav__logo' src={logo} alt='logo' />
-				<img className='nav__profile' src={profile} alt='profile' />
+				<img
+					onClick={() => {
+						history.push("/");
+					}}
+					className='nav__logo'
+					src={logo}
+					alt='logo'
+				/>
+				<img
+					onClick={() => {
+						history.push("/profile");
+					}}
+					className='nav__profile'
+					src={profile}
+					alt='profile'
+				/>
 			</div>
 		</div>
 	);
 };
 
-export default NAV;
+export default memo( NAV);

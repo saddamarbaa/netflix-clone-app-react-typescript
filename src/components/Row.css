@@ -6,52 +6,54 @@
 }
 
 .row__posters {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.row__posters {
+	padding-left: 50px;
 	display: flex;
-	overflow-y: hidden;
 	/* overflow-x: scroll; */
 	overflow-x: hidden;
-	padding: 20px;
 }
 
-.row__poster {
-	max-height: 100px;
-	object-fit: contain;
+.row__posterLarge img {
 	margin-right: 10px;
-	max-width: 250px;
-	transition: transform 450ms;
-	-webkit-transition: transform 450ms;
-	-moz-transition: transform 450ms;
-	-ms-transition: transform 450ms;
-	-o-transition: transform 450ms;
+	height: 250px;
+	width: auto;
 }
 
-.row__poster:hover {
-	/*transform: scale(1.08);
-	*/
-	transform: scale(1.1);
-	opacity: 1;
-	-webkit-transform: scale(1.1);
-	-moz-transform: scale(1.1);
-	-ms-transform: scale(1.1);
-	-o-transform: scale(1.1);
+.row__posters img {
+	transition: all 0.4s ease-out !important;
+	cursor: pointer;
+	-webkit-transition: ;
+	-moz-transition: ;
+	-ms-transition: ;
+	-o-transition: ;
 }
 
-.row__posterLarge {
-	max-height: 250px;
-}
-
-.row__posterLarge:hover {
-	/*transform: scale(1.08);
-  */
-	opacity: 1;
+.row__posters img:hover {
 	transform: scale(1.1);
 	-webkit-transform: scale(1.1);
 	-moz-transform: scale(1.1);
 	-ms-transform: scale(1.1);
 	-o-transform: scale(1.1);
+}
+
+.row__posters img {
+	margin-right: 10px;
+	width: 100%;
+	min-height: 180px;
+}
+
+.row__posters--ImageContainer {
+	margin-right: 10px;
+	width: 200px;
+	min-height: 180px;
 }
 
 /* to remove the scroll bar */
-.row__posters::-webkit-scrollbar {
+.row__posters::-webkit-scrollbar,
+.row__posterLarge::-webkit-scrollbar {
 	display: none;
 }
