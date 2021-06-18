@@ -1,6 +1,6 @@
 /** @format */
 
-import React, { useEffect, useState } from "react";
+import React, {memo, useEffect, useState } from "react";
 import "./Banner.css";
 import axios from "../api/axios";
 import requests from "../api/requests";
@@ -66,4 +66,4 @@ const Banner = () => {
 	);
 };
 
-export default Banner;
+export default memo(Banner);
