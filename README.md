@@ -52,7 +52,7 @@
 
 #  Related_Projects
 
-###  Netflix Clone App buil with vanilla JavaScript, Node.js, Express, MongoDB
+###  Netflix Clone App built with vanilla JavaScript, Node.js, Express, MongoDB
 ###  <a href="https://github.com/saddamarbaa/netflix-clone-vanillaJS"> Front-End Repo </a>
 ###  <a href="https://github.com/saddamarbaa/netflix-clone-api"> Back-end Repo (Netflix Clone API)</a>
 ### <a href="https://netflix-saddam.netlify.app">LIVE DEMO</a>
