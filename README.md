@@ -58,6 +58,35 @@
 ### <a href="https://netflix-saddam.netlify.app">LIVE DEMO</a>
 
 
+
+###  Hulu Clone App built with React Js + Next Js+ TypeScript + Tailwind CSS
+
+###  <a href="https://github.com/saddamarbaa/Hulu-clone-app-next.js-typeScript"> Github Repo </a>
+
+
+
+###  Facebook Clone App built with React Js + Next Js + TypeScript + Redux + Styled Components
+
+###  <a href="https://github.com/saddamarbaa/facebook-clone-app-nex-js"> Github Repo </a>
+###  <a href="https://facebook-clone-app-nex-js.vercel.app/">LIVE DEMO</a> 
+
+
+### Airbnb Clone App built with React Js + Next Js + Redux + Tailwind CSS
+
+### <a href="https://github.com/saddamarbaa/airbnb-clone-app-nex-js"> Github Repo </a>
+
+### <a href="https://airbnb-clone-app-nex-js.vercel.app/">LIVE DEMO</a>
+
+
+### Amazon Clone App built with React Js + Redux + Styled Components
+
+### <a href="https://github.com/saddamarbaa/amazon-clone-app"> Github Repo </a>
+
+### <a href="https://amazoon-clone-app.web.app/">LIVE DEMO</a>
+
+
+
+
 # Features
 -  Complete user authentication users can sign in, sign out
 -  View top rated movies
