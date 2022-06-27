@@ -1,0 +1,142 @@
+.signInScreen {
+	position: absolute;
+	top: 30px;
+	left: 0;
+	right: 0;
+	width: 100%;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	box-sizing: border-box;
+	max-height: 100vh;
+}
+
+.signInScreen__container {
+	background-color: rgba(0, 0, 0, 0.75);
+	padding-top: 60px;
+	padding-bottom: 60px;
+	padding-left: 68px;
+	padding-right: 68px;
+	border-radius: 4px;
+	width: 350px;
+	max-width: 350px;
+	max-height: 400px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-ms-border-radius: 4px;
+	-o-border-radius: 4px;
+}
+
+.signInScreen__container > form {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+}
+
+.signInScreen__container > form h1 {
+	display: block;
+	width: 100%;
+	text-align: left;
+	color: #fff;
+	font-size: 32px;
+	font-weight: 700;
+	margin: 0 0 10px 0;
+	margin-bottom: 28px;
+}
+
+.signInScreen__container > form h4 {
+	width: 100%;
+	text-align: center;
+	color: #fff;
+	margin-bottom: 28px;
+	font-size: 20px;
+	font-weight: 500;
+}
+
+.signInScreen__container > form h4 span.signupScreen_gray {
+	color: #737373;
+}
+
+.signInScreen__container > form h4 span.signupScreen_link:hover {
+	text-decoration: underline;
+	color: white;
+	cursor: pointer;
+}
+
+.signInScreen__container > form input {
+	outline: 0;
+	min-height: 50px;
+	border: 0;
+	width: 100%;
+	max-width: 100%;
+	margin-bottom: 19px;
+	margin-top: 3px;
+	padding: 16px 20px;
+	box-sizing: border-box;
+	outline-width: 0;
+	color: #fff;
+	background: #333;
+	transition: 0.4s;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+	-webkit-transition: 0.4s;
+	-moz-transition: 0.4s;
+	-ms-transition: 0.4s;
+	-o-transition: 0.4s;
+}
+
+.signInScreen__container > form input.is-invalid {
+	border: 1px solid #e87c03;
+}
+
+.signInScreen__container > form p.is-invalid {
+	background: 'red';
+}
+
+/* .signInScreen__container > form input:focus {
+	border-bottom: 1px solid #e87c03;
+} */
+
+.signInScreen__container > form button {
+	background-color: #e50914;
+	padding: 16px 20px;
+	font-size: 1rem;
+	color: white;
+	margin-bottom: 28px;
+	margin-top: 20px;
+	font-weight: 600;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+	max-width: 100%;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+}
+
+.signupScreen_withGoogle {
+	display: flex;
+	align-items: center;
+	color: #737373;
+	font-size: 16px;
+	font-weight: 500;
+	cursor: pointer;
+}
+
+.signupScreen_withGoogle:hover {
+	text-decoration: underline;
+}
+
+.signupScreen_withGoogle img {
+	width: 30px;
+	height: 30px;
+	margin-right: 10px;
+}
