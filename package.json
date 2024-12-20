@@ -5,6 +5,9 @@
 	"version": "0.1.0",
 	"private": true,
 	"type": "module",
+	"engines": {
+		"node": "v20.1.0"
+	},
 	"scripts": {
 		"dev": "vite",
 		"build": "tsc -b && vite build",
