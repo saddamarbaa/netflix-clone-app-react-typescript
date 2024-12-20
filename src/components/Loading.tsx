@@ -1,6 +1,4 @@
-import React, { memo } from 'react'
-// @ts-ignore
-import { Circle } from 'better-react-spinkit'
+import { memo } from 'react'
 
 import './Loading.css'
 import logo from '../assets/images/logo.png'
@@ -47,7 +45,7 @@ export const SignUpScreen = () => {
 						/>
 					</div>
 					<div>
-						<Circle color="#E6020C" size={60} />
+						{/* <Circle color="#E6020C" size={60} /> */}
 					</div>
 				</div>
 			</div>

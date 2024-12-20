@@ -6,7 +6,7 @@ export interface AuthRequestType {
 }
 
 export interface AuthResponseType {
-	email: string 
-	displayName?: string 
-	uid: string 
+	email: string
+	displayName?: string
+	uid: string
 }

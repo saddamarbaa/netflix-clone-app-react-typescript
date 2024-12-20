@@ -1,4 +1,4 @@
-import React, { memo, useEffect, useState } from 'react'
+import { memo, useEffect, useState } from 'react'
 
 import './Banner.css'
 import axios from '../utils/api/axios'
@@ -39,7 +39,7 @@ const Banner = () => {
 			<div className="banner__contents">
 				<h1 className="banner__title">{bannerTitle}</h1>
 				<div className="banner__buttons">
-					<button className="banner__button">Play</button>
+					<button className="banner__button play">Play</button>
 					<button className="banner__button">My List</button>
 				</div>
 				<h1 className="banner__description">
@@ -48,7 +48,7 @@ const Banner = () => {
 			</div>
 
 			{/* this for fade effect in the bottom of the banner */}
-			<div className="banner--fadeBottom" />
+			<div className="h-32 bg-gradient-to-b from-transparent via-transparent to-black/5" />
 		</header>
 	)
 }

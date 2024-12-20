@@ -21,7 +21,7 @@ const userSlice = createSlice({
 
 		setLogOutState: (
 			state: { user: AuthResponseType | null },
-			action: PayloadAction,
+			_action: PayloadAction,
 		) => {
 			// setUser(null);
 			state.user = null
