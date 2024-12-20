@@ -32,9 +32,10 @@
 **Client:**  
 
 -  React Js
+-  Vite
 -  TypeScript
--  Redux
--  Material-UI
+-  Tailwind CSS
+
 
 **Server:** 
 

@@ -1,12 +1,11 @@
-import React, { Suspense } from 'react'
-import './HomeScreen.css'
+import { Suspense } from 'react'
 
-import request from '../../utils/api/requests'
-import Banner from '../../components/Banner'
-import Row from '../../components/Row'
-const NAV = React.lazy(() => import('../../components/NAV'))
+import Row from '../components/Row'
+import NAV from '../components/NAV'
+import Banner from '../components/Banner'
+import request from '../utils/api/requests'
 
-export const HomeScreen = () => {
+export default function HomeScreen() {
 	return (
 		<div className="homeScreen">
 			<Suspense fallback={<div>Loading...</div>}>
@@ -46,5 +45,3 @@ export const HomeScreen = () => {
 		</div>
 	)
 }
-
-export default HomeScreen

@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	body {
+		@apply min-h-screen;
+	}
+
+	html {
+		scroll-behavior: smooth;
+	}
+}
+
+@layer components {
+	.test {
+		@apply mb-5 w-full max-w-[305px] cursor-pointer;
+	}
+}
+
+/* Remove scrollbar in chrome */
+html::-webkit-scrollbar {
+	display: none;
+}
+
+/* Remove scrollbar in firefox */
+html {
+	scrollbar-width: none;
+	overflow-x: hidden; /* Hide horizontal scrollbar */
+	background: #000;
+}

@@ -1,7 +1,9 @@
-import React, { useState, useEffect, memo } from 'react'
+import { useState, useEffect, memo } from 'react'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
 import YouTube from 'react-youtube'
-// @ts-ignore
+
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-expect-error
 import movieTrailer from 'movie-trailer'
 
 import 'react-lazy-load-image-component/src/effects/blur.css'

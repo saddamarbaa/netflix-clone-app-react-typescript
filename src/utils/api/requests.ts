@@ -1,5 +1,5 @@
 // TMDB API KEY
-const API_KEY = process.env.REACT_APP_TMDB_API_KEY
+const API_KEY = '92bcc12799d8068995c7c9650f414f3e'
 
 // function to fetch movies from (TMDb)
 const request = {
