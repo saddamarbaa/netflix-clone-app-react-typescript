@@ -1,5 +1,5 @@
 // TMDB API KEY
-const API_KEY = '92bcc12799d8068995c7c9650f414f3e'
+const API_KEY = import.meta.env.VITE_REACT_APP_TMDB_API_KEY
 
 // function to fetch movies from (TMDb)
 const request = {

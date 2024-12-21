@@ -17,10 +17,11 @@ export const SignUpScreen = () => {
 						boxShadow: '0 2px 8px rgba(0, 0, 0, 0.8)',
 						display: 'grid',
 						placeItems: 'center',
-						width: '210px',
-						height: '220px',
+						width: '350px',
+						height: '350px',
 						margin: '0 auto',
 						border: '1px solid  #e50914',
+						cursor: 'pointer',
 					}}>
 					<div
 						className="logo"
@@ -28,8 +29,8 @@ export const SignUpScreen = () => {
 							position: 'relative',
 							cursor: 'pointer',
 							marginBottom: '3rem',
-							width: '11rem',
-							height: '9rem',
+							width: '8rem',
+							height: '8rem',
 							display: 'block',
 						}}>
 						<img
@@ -44,8 +45,9 @@ export const SignUpScreen = () => {
 							alt="Picture of the Netflix"
 						/>
 					</div>
-					<div>
-						{/* <Circle color="#E6020C" size={60} /> */}
+					<div className="loader">
+						{/* Example with TailwindCSS Spinner */}
+						<div className="border-t-4 border-[#e50914] border-opacity-50 rounded-full w-12 h-12 animate-spin"></div>
 					</div>
 				</div>
 			</div>
