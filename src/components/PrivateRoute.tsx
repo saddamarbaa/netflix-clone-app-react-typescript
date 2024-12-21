@@ -26,6 +26,8 @@ export default function PrivateRoute() {
 		)
 	}
 
+	console.log('private route', user)
+
 	if (!user && !loading) {
 		return <Navigate to="/sign-in" />
 	}

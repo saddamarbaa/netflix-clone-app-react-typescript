@@ -16,7 +16,7 @@ export default function ProfileScreen() {
 	const [email, setEmail] = useState(user?.email || '')
 	const history = useNavigate()
 
-	console.log('current user ' + user?.displayName)
+	// console.log('current user ' + user?.displayName)
 
 	// Sign out Function
 	const logOutHandler = () => {

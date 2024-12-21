@@ -1,4 +1,5 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit'
+
 import { AuthResponseType } from '../../types'
 
 // const [user, setUser] = useState();
@@ -19,10 +20,7 @@ const userSlice = createSlice({
 			state.user = action.payload
 		},
 
-		setLogOutState: (
-			state: { user: AuthResponseType | null },
-			_action: PayloadAction,
-		) => {
+		setLogOutState: (state: { user: AuthResponseType | null }) => {
 			// setUser(null);
 			state.user = null
 		},

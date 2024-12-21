@@ -59,7 +59,6 @@ export default function SignUpScreen() {
 	const signInWithGoogleHandler = () => {
 		signInWithPopup(auth, googleProvider)
 			.then((_result) => {
-				
 				history('/')
 				// console.log(result, user)
 			})
