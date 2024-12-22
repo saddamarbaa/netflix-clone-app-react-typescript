@@ -1,4 +1,4 @@
-import { Route, Routes, useLocation } from 'react-router'
+import { Navigate, Route, Routes, useLocation } from 'react-router'
 
 import HomeScreen from './screens/HomeScreen'
 import ProfileScreen from './screens/ProfileScreen'
@@ -12,7 +12,9 @@ export default function RouteLayout() {
 
 	return (
 		<Routes key={location.pathname} location={location}>
-			<Route path="/" element={<HomeScreen />} />
+			{/* Redirect from "/" to "/browser" */}
+			<Route path="/" element={<Navigate to="/browser" />} />
+			<Route path="/browser" element={<HomeScreen />} />
 			<Route path="/profile" element={<PrivateRoute />}>
 				<Route path="/profile" element={<ProfileScreen />} />
 			</Route>

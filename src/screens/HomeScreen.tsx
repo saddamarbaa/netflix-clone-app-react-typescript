@@ -1,7 +1,7 @@
 import { Suspense } from 'react'
 
 import Row from '../components/Row'
-import NAV from '../components/NAV'
+import NAV from '../components/Nav'
 import Banner from '../components/Banner'
 import request from '../utils/api/requests'
 

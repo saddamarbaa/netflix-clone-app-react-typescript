@@ -6,7 +6,7 @@ import { doc, updateDoc } from 'firebase/firestore'
 import { auth, db } from '../config'
 import { getTime } from '../utils'
 import profile from '../assets/images/profile__logo.png'
-import NAV from '../components/NAV'
+import NAV from '../components/Nav'
 import { useAuthState } from 'react-firebase-hooks/auth'
 import { FirebaseError } from 'firebase/app'
 
