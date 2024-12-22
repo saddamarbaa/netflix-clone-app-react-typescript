@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router'
 import logo from '../assets/images/logo.png'
 import profile from '../assets/images/profile__logo.png'
 
-const NAV = () => {
+const Nav = () => {
 	const history = useNavigate()
 	const [show, handleShowNav] = useState(false)
 
@@ -35,15 +35,17 @@ const NAV = () => {
 					src={logo}
 					alt="logo"
 				/>
-				<img
-					onClick={() => history('/profile')}
-					className="fixed top-3 right-5 w-[30px] cursor-pointer"
-					src={profile}
-					alt="profile"
-				/>
+				<div className="fixed top-3 right-5">
+					<img
+						onClick={() => history('/profile')}
+						className=" w-[30px] cursor-pointer"
+						src={profile}
+						alt="profile"
+					/>
+				</div>
 			</div>
 		</div>
 	)
 }
 
-export default NAV
+export default Nav
