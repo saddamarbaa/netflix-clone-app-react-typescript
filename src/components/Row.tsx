@@ -11,6 +11,7 @@ import 'react-lazy-load-image-component/src/effects/blur.css'
 import './Row.css'
 import axios from '../utils/api/axios'
 import { MovieType } from '../types'
+import { BASE_URL } from '../constants'
 
 type RowType = {
 	title: string
@@ -20,7 +21,7 @@ type RowType = {
 const Row = ({ title, fetchUrl, isLargeRow = false }: RowType) => {
 	const [movies, setMovies] = useState<MovieType[]>([])
 	const [trailerUrl, setTrailerUrl] = useState('')
-	const base_url = 'https://image.tmdb.org/t/p/original'
+	const base_url = BASE_URL
 
 	async function fetchMoviesData() {
 		try {
@@ -91,7 +92,9 @@ const Row = ({ title, fetchUrl, isLargeRow = false }: RowType) => {
 										onClick={() => handleClick(movie)}
 										key={movie.id}
 										src={`${base_url}${
-											isLargeRow ? movie.poster_path : movie.backdrop_path
+											isLargeRow
+												? movie.poster_path || console.log('here')
+												: movie.backdrop_path
 										}`}
 										alt={movie.name}
 									/>

@@ -5,15 +5,9 @@ import { getRandomIntNumberBetween, truncate } from '../utils'
 import { MovieType } from '../types'
 import { useSelector } from 'react-redux'
 import { RootState } from '../app/store'
+import { API_OPTIONS } from '../constants'
 
-const API_OPTIONS = {
-	headers: {
-		accept: 'application/json',
-		Authorization: `Bearer ${
-			import.meta.env.VITE_REACT_APP_TMDB_API_ACCESS_TOKEN
-		}`,
-	},
-}
+
 
 // Fetch Now Playing Movies
 async function fetchNowPlayingMovies(selectedLanguage = 'en-US') {

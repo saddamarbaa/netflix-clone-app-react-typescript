@@ -11,9 +11,14 @@ import { SUPPORTED_LANGUAGES } from '../constants'
 interface NAVProps {
 	handleGptSearch?: () => void
 	isChatGptSearch?: boolean
+	isShowLanguage?: boolean
 }
 
-const NAV = ({ handleGptSearch, isChatGptSearch }: NAVProps) => {
+const NAV = ({
+	handleGptSearch,
+	isChatGptSearch,
+	isShowLanguage = false,
+}: NAVProps) => {
 	const dispatch = useDispatch()
 	const { selectedLanguage } = useSelector((state: RootState) => state.language)
 
@@ -53,18 +58,20 @@ const NAV = ({ handleGptSearch, isChatGptSearch }: NAVProps) => {
 					alt="logo"
 				/>
 				<div className="fixed top-3 right-5 flex items-center space-x-6 cursor-pointer">
-					<div className="language-select  ">
-						<select
-							value={selectedLanguage}
-							onChange={(e) => changeLanguage(e.target.value)}
-							className="py-3 px-4 rounded-md text-sm outline-none font-bold">
-							{SUPPORTED_LANGUAGES.map((lang) => (
-								<option key={lang.identifier} value={lang.identifier}>
-									{lang.name}
-								</option>
-							))}
-						</select>
-					</div>
+					{isShowLanguage && (
+						<div className="language-select  ">
+							<select
+								value={selectedLanguage}
+								onChange={(e) => changeLanguage(e.target.value)}
+								className="py-3 px-4 rounded-md text-sm outline-none font-bold">
+								{SUPPORTED_LANGUAGES.map((lang) => (
+									<option key={lang.identifier} value={lang.identifier}>
+										{lang.name}
+									</option>
+								))}
+							</select>
+						</div>
+					)}
 
 					{/* Search Button */}
 					{handleGptSearch ? (

@@ -6,6 +6,7 @@ import SignUpScreen from './screens/SignUpScreen'
 import SignInScreen from './screens/SignInScreen'
 import NotFoundScreen from './screens/NotFoundScreen'
 import PrivateRoute from './components/PrivateRoute'
+import MovieDetailScreen from './screens/MovieDetailScreen'
 
 export default function RouteLayout() {
 	const location = useLocation()
@@ -13,8 +14,10 @@ export default function RouteLayout() {
 	return (
 		<Routes key={location.pathname} location={location}>
 			{/* Redirect from "/" to "/browser" */}
+
 			<Route path="/" element={<Navigate to="/browser" />} />
 			<Route path="/browser" element={<HomeScreen />} />
+			<Route path="/movie/:id" element={<MovieDetailScreen />} />
 			<Route path="/profile" element={<PrivateRoute />}>
 				<Route path="/profile" element={<ProfileScreen />} />
 			</Route>

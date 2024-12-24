@@ -13,4 +13,5 @@ export interface MovieType {
 	vote_average: string
 	vote_count: string
 	title?: string
+	release_date?: string
 }

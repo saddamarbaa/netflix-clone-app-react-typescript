@@ -7,7 +7,7 @@ import request from '../utils/api/requests'
 import ChatGPTSearch from '../components/ChatGPTSearch'
 
 export default function HomeScreen() {
-	const [isChatGptSearch, setIsChatGptSearch] = useState(true)
+	const [isChatGptSearch, setIsChatGptSearch] = useState(false)
 
 	function handleGptSearch() {
 		setIsChatGptSearch((prev) => !prev)
@@ -18,6 +18,7 @@ export default function HomeScreen() {
 				<NAV
 					handleGptSearch={handleGptSearch}
 					isChatGptSearch={isChatGptSearch}
+					isShowLanguage={true}
 				/>
 			</Suspense>
 
