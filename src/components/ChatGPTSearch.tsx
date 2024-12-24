@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import { useEffect, useState } from 'react'
 import { SUPPORTED_LANGUAGES } from '../constants'
 import { useSelector } from 'react-redux'
@@ -65,7 +66,7 @@ function ChatGPTSearch() {
 		} catch (error: any) {
 			console.error('Error fetching search results:', error)
 
-			const errorMessage =
+			let errorMessage =
 				error?.response?.data?.error?.message ||
 				error?.message ||
 				'Something went wrong. Please try again later.'
@@ -75,14 +76,14 @@ function ChatGPTSearch() {
 				error?.response?.status === 429 ||
 				error?.message?.includes('You exceeded your current quota')
 			) {
-				setError(
-					'It looks like we’re temporarily unavailable due to high traffic. Please try again later.',
-				)
-				// Fallback to TMDb API if OpenAI fails
-				await fetchMoviesFromTMDb([searchQuery])
+				errorMessage =
+					'It looks like we’re temporarily unavailable due to high traffic. Please try again later.'
+				// setError(errorMessage)
+				// await fetchMoviesFromTMDb([searchQuery])
 			} else {
-				setError(errorMessage)
+				// setError(errorMessage)
 			}
+			await fetchMoviesFromTMDb([searchQuery])
 		} finally {
 			setLoading(false)
 		}
@@ -198,7 +199,7 @@ function ChatGPTSearch() {
 						{/* Error State */}
 						{!results.length && error && (
 							<Card>
-								<p className="text-center text-red-600 font-semibold bg-red-100 p-4 rounded-lg mt-4">
+								<p className="text-center text-red-600 font-semibold bg-red-100 p-4 rounded-lg mt-4 overflow-hidden">
 									{error}
 								</p>
 							</Card>
