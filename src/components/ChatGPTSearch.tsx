@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/ban-ts-comment */
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import { useEffect, useState } from 'react'
 import { SUPPORTED_LANGUAGES } from '../constants'
@@ -65,7 +66,7 @@ function ChatGPTSearch() {
 			}
 		} catch (error: any) {
 			console.error('Error fetching search results:', error)
-
+			// @ts-expect-error
 			let errorMessage =
 				error?.response?.data?.error?.message ||
 				error?.message ||
