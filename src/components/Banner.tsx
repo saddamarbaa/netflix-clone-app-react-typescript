@@ -3,15 +3,11 @@ import { useEffect, useState } from 'react'
 import axios from '../utils/api/axios'
 import { getRandomIntNumberBetween, truncate } from '../utils'
 import { MovieType } from '../types'
+import { useSelector } from 'react-redux'
+import { RootState } from '../app/store'
+import { API_OPTIONS } from '../constants'
 
-const API_OPTIONS = {
-	headers: {
-		accept: 'application/json',
-		Authorization: `Bearer ${
-			import.meta.env.VITE_REACT_APP_TMDB_API_ACCESS_TOKEN
-		}`,
-	},
-}
+
 
 // Fetch Now Playing Movies
 async function fetchNowPlayingMovies(selectedLanguage = 'en-US') {
@@ -44,6 +40,7 @@ async function fetchMovieTrailer(movieId: number) {
 }
 
 const Banner = () => {
+	const { selectedLanguage } = useSelector((state: RootState) => state.language)
 	const [selectedTrailer, setSelectedTrailer] = useState<any>(null)
 	const [selectedMovie, setSelectedMovie] = useState<MovieType>()
 
@@ -51,7 +48,7 @@ const Banner = () => {
 	async function fetchMoviesWithTrailer() {
 		try {
 			// Get the list of now-playing movies
-			const nowPlayingMovies = await fetchNowPlayingMovies('en-US')
+			const nowPlayingMovies = await fetchNowPlayingMovies(selectedLanguage)
 			if (nowPlayingMovies.length === 0) return
 
 			// Generate a random index to select a random movie
@@ -93,7 +90,7 @@ const Banner = () => {
 
 	useEffect(() => {
 		fetchMoviesWithTrailer()
-	}, [])
+	}, [selectedLanguage])
 
 	// Banner Details
 	const bannerTitle =
