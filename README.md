@@ -489,7 +489,18 @@ You can view the live demo of this project [here](https://netflix-clone-app-reac
 ## Related Projects
 
 
-### TMDB Clone App
+### **Netflix Clone (Frontend)** built with HTML, CSS, Bootstrap
+- A simple Netflix clone focusing on the frontend layout, built with HTML, CSS, and Bootstrap to replicate Netflix's UI.
+
+---
+
+### **Netflix Clone API** built with Node.js, Express, and MongoDB
+- [**GitHub Repo**](https://github.com/saddamarbaa/netflix-clone-api)
+- A clone of Netflix's backend API that allows you to manage movies, users, and subscriptions, with features such as authentication and content management.
+
+---
+
+### **TMDB Clone App**
 - [**GitHub Repo**](https://github.com/saddamarbaa/imdb-clone-app-next13-typescript)
 - A movie discovery app built with React.js, Next.js, TypeScript, and Tailwind CSS, replicating the functionality of TMDB. It allows users to browse, search, and view details of movies and TV shows using TMDB's public API.
 
@@ -500,13 +511,6 @@ You can view the live demo of this project [here](https://netflix-clone-app-reac
 - A clone of Hulu's frontend with features like user authentication, TV show/movie management, and search functionality.
 
 ---
-
-### **Netflix Clone API** built with Node.js, Express, and MongoDB
-- [**GitHub Repo**](https://github.com/saddamarbaa/netflix-clone-api)
-- A clone of Netflix's backend API that allows you to manage movies, users, and subscriptions, with features such as authentication and content management.
-
----
-
 
 
 ### Open Source Blog REST API
