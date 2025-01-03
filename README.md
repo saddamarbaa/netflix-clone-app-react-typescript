@@ -1,4 +1,10 @@
 # Netflix Clone - React, TypeScript, and Vite
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+![Node](https://img.shields.io/badge/node-%3E%3D%2018.0.0-brightgreen)
+![TypeScript](https://img.shields.io/badge/typescript-%5E5.0.0-blue)
+![React](https://img.shields.io/badge/react-%5E18.0.0-blue)
+![Firebase](https://img.shields.io/badge/firebase-%5E9.0.0-orange)
+![TMDB API](https://img.shields.io/badge/tmdb-API-green)
 
 A fully functional Netflix clone built with React, TypeScript, and Vite. This project features user authentication, profile management, movie browsing, trailers, search functionality (powered by ChatGPT), and more.
 
@@ -6,6 +12,7 @@ A fully functional Netflix clone built with React, TypeScript, and Vite. This pr
 
 - [Author](#author)
 - [Features](#features)
+- [ Live Demo](#Live-demo)
 - [Technologies Used](#technologies-used)
 - [Getting Started](#project-setup)
   - [Clone the repository](#1-clone-the-repository)
@@ -20,6 +27,7 @@ A fully functional Netflix clone built with React, TypeScript, and Vite. This pr
 - [Scripts](#scripts)
 - [Firebase Authentication](#firebase-authentication)
 - [Movie Features](#movie-features)
+- [Optimizations](#optimizations)
 - [Screenshots](#screenshots)
 - [Deployment](#deployment)
 - [Optimizations](#optimizations)
@@ -30,10 +38,14 @@ A fully functional Netflix clone built with React, TypeScript, and Vite. This pr
 - [Feedback](#feedback)
 - [Related Projects](#related-projects)
 - [Screenshots](#screenshots)
-- [License](#license)
-- [Demo](#demo)
 - [Social Links](#social-links)
+- [License](#license)
 
+
+## Live Demo
+
+
+You can check out the live demo of the Netflix Clone project at:  [Live Demo](https://netflix-clone-app-react-typescript-wvrc.vercel.app//)
 
 ## Author
 
@@ -112,6 +124,10 @@ For more information, visit [GitHub Profile](https://github.com/saddamarbaa).
 - **Multilingual Support**:
   - The app supports multiple languages, allowing users to switch between languages for a more personalized experience.
 
+- **API Performance**:
+  - **Debouncing**: Added debouncing with a 200ms delay to reduce API calls and enhance user experience.
+  - **API Polling**: Implemented API polling to ensure video content is always up-to-date.
+
 
 ## Movie Features
 The following movie features are included:
@@ -121,6 +137,21 @@ The following movie features are included:
 - **Movie Trailers**: Watch movie trailers before deciding what to watch.
 - **Search**: Search movies by title.
 - **ChatGPT Recommendations**: Get personalized movie recommendations based on preferences.
+
+
+## **Optimizations**
+
+⚡ **Performance Improvements**:
+- **Lazy Loading**: Integrated lazy loading for video thumbnails and details, reducing initial load time by 30%.
+- **Skeleton UI**: Added skeleton screens to provide a smoother and more engaging user experience during loading times.
+
+- **Debounce Search**: Implemented a 500ms debounce on the search input to minimize unnecessary API calls and improve real-time search performance.
+- **Memoization**: Used `useMemo` and `React.memo` to optimize re-renders and prevent unnecessary recalculations of components and values.
+- **Code-Splitting**: Leveraged `React.lazy` and `Suspense` for dynamic imports, reducing the bundle size and improving the app’s load time.
+- **Function Components**: Adopted function components across the app for better readability, maintainability, and performance.
+- **React Hooks**: Utilized hooks like `useState`, `useEffect`, and `useMemo` for clean state management and efficient side-effect handling.
+- **Efficient Cleanup**: Included cleanup functions in `useEffect` to prevent memory leaks and reduce unnecessary re-renders.
+- **Future SEO Improvements**: Planning to implement Server-Side Rendering (SSR) in the next version using Next.js to improve SEO and enhance initial load performance.
 
 
 ## Technologies Used
@@ -145,6 +176,9 @@ The following movie features are included:
 - **Tailwind CSS**: Utility-first CSS framework for building responsive designs.
 - **TypeScript**: Superset of JavaScript that adds static types for better development experience.
 - **Vite**: Next-generation front-end tool that offers fast and optimized development builds.
+
+
+
 
 
 
@@ -334,18 +368,6 @@ Once deployed, your application will be live, and you can access it through the 
 
 
 
-## **Optimizations**
-
-- **Debounce Implementation**:Added a debounce mechanism to optimize search input handling by delaying the execution of the search function until the user stops typing for a specified time (500ms). This reduces unnecessary search calls and improves performance during real-time searching.
-- **Memoization**: `useMemo`, `React.memo`
-- **Lazy Loading Images**: `react-lazy-load-image-component`
-- **Code-Splitting**: React (using `React.lazy` and `Suspense`)
-- **Suspense Component**: React `Suspense` for code splitting and async rendering
-- **Function Components**: Used function components for better performance and readability
-- **React Hooks**: Utilized `useState`, `useEffect`, `useMemo`, and other React hooks for state management and side-effects
-- **React `useEffect` Cleanup**: Implemented cleanup functions in `useEffect` to avoid memory leaks and unnecessary rerenders
-- **Server-side Rendering (Next.js)**: **TODO** (To implement in future version for improved SEO and initial load time)
-
 
 ## **Contributing**
 
@@ -478,18 +500,17 @@ You are free to use, modify, and distribute the code, but please ensure you foll
 [![twitter](https://img.shields.io/badge/twitter-Code?style=for-the-badge&logo=twitter&logoColor=white&color=1DA1F2)](https://twitter.com/ArbaaSaddam)
 
 
-## Demo
-
-You can view the live demo of this project [here](https://netflix-clone-app-react-typescript-wvrc.vercel.app/).
-
-
-
-
 
 ## Related Projects
 
+### **YouTube Clone App** built with React + Vite + TypeScript + Styled Components + Firebase
+- [**GitHub Repo**](https://github.com/saddamarbaa/youtube-clone-app-react-vite-typescript)
+- A fully functional YouTube clone with features like video listing, search, user authentication, video playback, and more, built using React, Vite, TypeScript, and styled with Tailwind CSS. Firebase is used for authentication and storing user data.
+
+
 
 ### **Netflix Clone (Frontend)** built with HTML, CSS, Bootstrap
+- [**GitHub Repo**](https://github.com/saddamarbaa/netflix-clone-vanillaJS)
 - A simple Netflix clone focusing on the frontend layout, built with HTML, CSS, and Bootstrap to replicate Netflix's UI.
 
 ---
